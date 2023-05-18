@@ -22,9 +22,9 @@ def conversiontiempo(seg):
 #se define la funcion "principal" ya que en este se nos pide ingresar los destinos que serán validados con los datos que capturamos de MapQuest
 def main():
     while True:                                                                                     #se crea un bucle de sentencia true
-        orig = input("Ingrese ciudad de origen(para salir persione S o escriba salir ): ")             #pide ingresar la ciudad de origen
+        orig = input("Ingrese ciudad de origen(para salir persione S o escriba salida ): ")             #pide ingresar la ciudad de origen
         #if orig.lower() == 's':
-        if orig.upper() == 'S' or orig.lower() == 'salir':                         #si se presionan las letras "S" o se escribe Salida se termina el bucle y se termina el script y nos muestra la ultima linea que dice "Salida"
+        if orig.upper() == 'S' or orig.lower() == 'salida':                         #si se presionan las letras "S" o se escribe Salida se termina el bucle y se termina el script y nos muestra la ultima linea que dice "Salida"
             break                                                                               #se solicita la ciudad de destino 
         dest = input("Ingrese la ciudad de destino: ")
         distance, duration = distancia_viajes(orig, dest)                           #despues de ingresar nos muestra la distancia y duracion de donde obtiene los datos que en este caso los obtiene de la primera función y la funcion inferior
